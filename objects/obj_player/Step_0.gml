@@ -11,11 +11,11 @@ if (keyboard_check(vk_up)) {
 	
 image_speed = 0;
     
-if (keyboard_check(vk_left)) {
+if (keyboard_check(vk_left) and !instance_place(x - step_length, y - 2, obj_block)) {
 		x = min(max(0 - sprite_xoffset, x - step_length), room_width);
 		image_speed = 1;
 		sprite_index = spr_player_left;
-	} else if (keyboard_check(vk_right)) {
+	} else if (keyboard_check(vk_right) and !instance_place(x + step_length, y - 2, obj_block)) {
 		x = min(max(0, x + step_length), room_width + sprite_xoffset);
 		image_speed = 1;
 		sprite_index = spr_player_right;
