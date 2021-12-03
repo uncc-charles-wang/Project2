@@ -3,6 +3,6 @@
 width = 280;
 height = 80;
 
-text = "Play Game";
+text = Text_button;
 
 hover = 0;
