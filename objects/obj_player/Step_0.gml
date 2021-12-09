@@ -27,6 +27,6 @@ if (instance_place(x, y+1, obj_block)) {
 	gravity = 1
 }
 
-if (vspeed > 12) {
+if (vspeed > 12) { // Limit fall speed
 	vspeed = 12
-}
+} 
