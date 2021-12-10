@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_coffin",
-    "path": "sprites/spr_coffin/spr_coffin.yy",
+    "name": "spr_lifePickup",
+    "path": "sprites/spr_lifePickup/spr_lifePickup.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_coffin",
+  "name": "obj_lifePickup",
   "tags": [],
   "resourceType": "GMObject",
 }

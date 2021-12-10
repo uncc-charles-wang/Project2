@@ -46,11 +46,6 @@ if (keyboard_check(vk_space)) { // Take picture
 	audio_play_sound(spr_camera, 0, false)
 	
 	// check to see if there is correct object
-	
-	
-	
-	
 }
-
 
 
