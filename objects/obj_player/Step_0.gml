@@ -23,6 +23,12 @@ if (keyboard_check(vk_left) and !instance_place(x - step_length, y - 2, obj_bloc
 	
 if (instance_place(x, y+1, obj_block)) {
 	gravity = 0
+	// correct y value
+	while(instance_place(x, y+1, obj_block)) {
+		y -= 1
+	}
+	
+	
 } else {
 	gravity = 1
 }
