@@ -1,6 +1,5 @@
-if keyboard_check_released(ord("Z")) {
+if keyboard_check_released(ord("Z")) && other.hasScored == false
+{
 	global.score += 100;
-	audio_play_sound(spr_camera, 0, false)
+	other.hasScored = true;	
 }
-	
-	

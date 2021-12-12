@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_block",
-    "path": "sprites/spr_block/spr_block.yy",
+    "name": "Sprite11",
+    "path": "sprites/Sprite11/Sprite11.yy",
   },
   "solid": false,
   "visible": false,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_marker",
   "tags": [],
   "resourceType": "GMObject",
 }

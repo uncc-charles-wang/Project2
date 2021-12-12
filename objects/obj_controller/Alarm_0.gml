@@ -1,1 +1,1 @@
-global.time -= 1;
+global.time--;

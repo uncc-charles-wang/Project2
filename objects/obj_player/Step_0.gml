@@ -1,18 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (keyboard_check_pressed(vk_up)) {
-	var block_below = false
-	var block_above = false
+if (keyboard_check(vk_up)) {
 	if (instance_place(x, y+1, obj_block)) {
-		block_below = true
-	}
-	if (instance_place(x, y-1, obj_block)) {
-		block_above = true
-	}
-	if (block_below == true && block_above == false) {
 		vspeed = jump_height
 	}
+	
 	
 }
 	
@@ -33,6 +26,11 @@ if (keyboard_check(vk_left) and !instance_place(x - step_length, y, obj_block)) 
 	
 if (instance_place(x, y+1, obj_block)) {
 	gravity = 0
+	// correct y value
+	while(instance_place(x, y+1, obj_block)) {
+		y -= 1
+	}
+	
 	
 } else {
 	gravity = 1
@@ -41,4 +39,13 @@ if (instance_place(x, y+1, obj_block)) {
 if (vspeed > 12) { // Limit fall speed
 	vspeed = 12
 } 
+
+if (keyboard_check(vk_space)) { // Take picture
+	// play sound effect
+	
+	audio_play_sound(spr_camera, 0, false)
+	
+	// check to see if there is correct object
+}
+
 
